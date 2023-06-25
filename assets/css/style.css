@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/woff/YekanBakh-thin.woff") format("woff"),
+    url("../fonts/woff2/YekanBakh-thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/woff/YekanBakh-Light.woff") format("woff"),
+    url("../fonts/woff2/YekanBakh-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"),
+    url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/woff/YekanBakh-SemiBold.woff") format("woff"),
+    url("../fonts/woff2/YekanBakh-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/woff/YekanBakh-Bold.woff") format("woff"),
+    url("../fonts/woff2/YekanBakh-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/woff/YekanBakh-ExtraBold.woff") format("woff"),
+    url("../fonts/woff2/Yekan Bakh-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/woff/YekanBakh-Black.woff") format("woff"),
+    url("../fonts/woff2/Yekan Bakh-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../fonts/woff/YekanBakh-ExtraBlack.woff") format("woff"),
+    url("../fonts/woff2/Yekan Bakh-ExtraBlack.woff2") format("woff2");
+}
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  font-family: Yekan Bakh;
+}
+
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: unset;
+}
+
+.bg-gray {
+  background-color: #232326;
+}
+
+.bg-black {
+  background-color: #161618;
+}
+.white {
+  color: #fff;
+}
+.green {
+  color: #8ed67c;
+}
+
+.img-about {
+  height: 450px;
+  width: 90%;
+  object-fit: cover;
+  border: 10px solid #585759;
+  border-radius: 20px 350px 20px 20px;
+}
+
+.gray_text {
+  color: #abaaaa;
+}
+
+/* Faq Section */
+.accordion-item {
+  margin: 15px 0;
+  border-radius: 4px;
+  border: 1px solid #8ed67c;
+  background: transparent;
+}
+
+.accordion-button {
+  color: #fff;
+
+  font-weight: 500;
+  background-color: transparent;
+}
+.accordion-item:not(:first-of-type) {
+  border: 1px solid #8ed67c;
+}
+
+.accordion-button::after {
+  background-image: url("../img/chevron-down.svg");
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  background-image: url("../img/chevron-down.svg");
+}
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #4b9479;
+  box-shadow: unset;
+  color: #fff;
+}
+
+.accordion-body {
+  color: #fff;
+  background-color: #4b9479;
+}
+
+.accordion-header button {
+  font-weight: 600;
+}
+
+.accordion {
+  border-radius: 10px;
+}
+
+/* Investment */
+.box-card {
+  border: 1px solid #232326;
+  padding: 17px;
+  box-shadow: 0 0 5px 2px #232326;
+  border-radius: 4px;
+  background-color: #232326;
+  color: #fff;
+}
+.img-box-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+.name-home-box,
+.development,
+.project-schedule,
+.investment-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+}
+
+.name-home-box p {
+  background-color: rgba(45, 128, 0, 0.12) !important;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.development p {
+  background-color: #161618;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.project-schedule {
+  border-bottom: 1px solid #eee9e2;
+}
+.start-button {
+  background-color: #8ed67c;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+.start-button a {
+  color: #fff;
+  font-weight: bold;
+}
+/* Investment */
